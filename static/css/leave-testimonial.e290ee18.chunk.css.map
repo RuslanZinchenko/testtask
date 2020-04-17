@@ -1,0 +1,1 @@
+{"version":3,"sources":["LeaveTestimonial.module.css"],"names":[],"mappings":"AAEA,0CACE,eACF","file":"leave-testimonial.e290ee18.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.leaveTestimonial {\n  margin-top: marginForComponents;\n}\n"]}

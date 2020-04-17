@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{463:function(n,o,e){n.exports={marginForComponents:"40px",termsAndConditions:"TermsAndConditions_termsAndConditions__2o35T"}},479:function(n,o,e){"use strict";e.r(o);var t=e(0),s=e.n(t),i=e(463),r=e.n(i);o.default=function(){return s.a.createElement("div",null,s.a.createElement("h2",{className:r.a.termsAndConditions},"Terms and Conditions"))}}}]);
+//# sourceMappingURL=terms-and-conditions.bc790cd4.chunk.js.map

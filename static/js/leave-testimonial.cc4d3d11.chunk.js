@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{457:function(e,n,a){e.exports={marginForComponents:"40px",leaveTestimonial:"LeaveTestimonial_leaveTestimonial__1vTTh"}},473:function(e,n,a){"use strict";a.r(n);var t=a(0),i=a.n(t),o=a(457),l=a.n(o);n.default=function(){return i.a.createElement("div",null,i.a.createElement("h2",{className:l.a.leaveTestimonial},"Leave testimonial"))}}}]);
+//# sourceMappingURL=leave-testimonial.cc4d3d11.chunk.js.map

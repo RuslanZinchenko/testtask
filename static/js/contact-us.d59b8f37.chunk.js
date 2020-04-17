@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{454:function(n,t,a){n.exports={marginForComponents:"40px",contactUs:"ContactUs_contactUs__36fuN"}},470:function(n,t,a){"use strict";a.r(t);var c=a(0),e=a.n(c),o=a(454),s=a.n(o);t.default=function(){return e.a.createElement("div",null,e.a.createElement("h2",{className:s.a.contactUs},"Contact us"))}}}]);
+//# sourceMappingURL=contact-us.d59b8f37.chunk.js.map

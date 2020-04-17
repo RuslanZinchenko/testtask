@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{459:function(e,n,r){e.exports={marginForComponents:"40px",ourNews:"OurNews_ourNews__2FWZg"}},475:function(e,n,r){"use strict";r.r(n);var o=r(0),s=r.n(o),t=r(459),u=r.n(t);n.default=function(){return s.a.createElement("div",null,s.a.createElement("h2",{className:u.a.ourNews},"Our news"))}}}]);
+//# sourceMappingURL=our-news.b1a73fcb.chunk.js.map

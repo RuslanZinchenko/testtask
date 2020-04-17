@@ -1,0 +1,1 @@
+{"version":3,"sources":["Licenses.module.css"],"names":[],"mappings":"AAEA,0BACE,eACF","file":"licenses.6a25867a.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.licenses {\n  margin-top: marginForComponents;\n}\n"]}

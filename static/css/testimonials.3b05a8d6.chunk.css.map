@@ -1,0 +1,1 @@
+{"version":3,"sources":["Testimonials.module.css"],"names":[],"mappings":"AAEA,kCACE,eACF","file":"testimonials.3b05a8d6.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.testimonials {\n  margin-top: marginForComponents;\n}\n"]}

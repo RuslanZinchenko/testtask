@@ -1,0 +1,1 @@
+{"version":3,"sources":["Articles.module.css"],"names":[],"mappings":"AAEA,0BACE,eACF","file":"articles.d9785e79.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.articles {\n  margin-top: marginForComponents;\n}\n"]}

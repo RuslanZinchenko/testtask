@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{466:function(e,n,r){e.exports={marginForComponents:"40px",requirements:"Requirements_requirements__Gyhpi"}},482:function(e,n,r){"use strict";r.r(n);var t=r(0),i=r.n(t),s=r(466),u=r.n(s);n.default=function(){return i.a.createElement("div",null,i.a.createElement("h2",{className:u.a.requirements},"Requirements"))}}}]);
+//# sourceMappingURL=requirements.8872116a.chunk.js.map

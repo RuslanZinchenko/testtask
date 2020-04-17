@@ -1,0 +1,1 @@
+{"version":3,"sources":["TermsAndConditions.module.css"],"names":[],"mappings":"AAEA,8CACE,eACF","file":"terms-and-conditions.8b819eab.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.termsAndConditions {\n  margin-top: marginForComponents;\n}\n"]}
