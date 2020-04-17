@@ -1,0 +1,5 @@
+@value marginForComponents from '../../styles/variables.module.css';
+
+.relationships {
+  margin-top: marginForComponents;
+}

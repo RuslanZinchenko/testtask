@@ -1,0 +1,87 @@
+@value backgroundColor1 from '../../styles/variables.module.css';
+@value mainContainer from '../../styles/variables.module.css';
+@value centerDirection from '../../styles/variables.module.css';
+
+@media (min-width: 22.5rem) {
+  .header {
+    width: 100vw;
+    background-color: backgroundColor1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .headerBackdrop {
+    composes: header;
+  }
+
+  .headerBackdrop::after {
+    display: block;
+    content: '';
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .headerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: mainContainer;
+    margin: centerDirection;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: backgroundColor1;
+    padding: 10px 15px;
+  }
+
+  .logoPicture {
+    display: block;
+    background-image: url('../../img/logo.svg');
+    width: 135px;
+    height: 20px;
+    margin-top: 1px;
+  }
+
+  .navigationSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .navigationButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .navigationButtonPicture {
+    display: block;
+    background-image: url('../../img/menu-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .headerContainer {
+    padding: 20px 30px;
+  }
+
+  .logoPicture {
+    margin-top: 0;
+  }
+}

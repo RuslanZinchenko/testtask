@@ -1,0 +1,5 @@
+@value marginForComponents from '../../styles/variables.module.css';
+
+.licenses {
+  margin-top: marginForComponents;
+}

@@ -1,0 +1,128 @@
+@value paragraph1 from '../../../styles/variables.module.css';
+@value heading2 from '../../../styles/variables.module.css';
+@value heading3 from '../../../styles/variables.module.css';
+@value centerDirection from '../../../styles/variables.module.css';
+@value blackText from '../../../styles/variables.module.css';
+@value tooltipTextColor from '../../../styles/variables.module.css';
+@value whiteText from '../../../styles/variables.module.css';
+@value paragraph2 from '../../../styles/variables.module.css';
+
+.userSmallCard {
+  word-break: break-all;
+  width: 200px;
+  margin: centerDirection;
+  color: blackText;
+}
+
+.userBigCard {
+  composes: userSmallCard;
+  width: 300px;
+}
+
+.userSmallImg {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: centerDirection;
+  border-radius: 50%;
+}
+
+.userBigImg {
+  composes: userSmallImg;
+  width: 150px;
+  height: 150px;
+}
+
+.userSmallName {
+  font-size: heading2;
+  margin-top: 20px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.userBigName {
+  composes: userSmallName;
+  font-size: 34px;
+  margin-top: 30px;
+}
+
+.userSmallPositionSmallName {
+  font-size: paragraph1;
+  margin-top: 21px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.userSmallPositionBigName {
+  composes: userSmallPositionSmallName;
+  margin-top: 17px;
+}
+
+.userBigPosition {
+  composes: userSmallPositionSmallName;
+  font-size: heading3;
+  margin-top: 20px;
+}
+
+.userSmallInfo {
+  font-size: paragraph1;
+  margin-top: 12px;
+  position: relative;
+}
+
+.userBigInfo {
+  composes: userSmallInfo;
+  font-size: heading3;
+  margin-top: 20px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: tooltipTextColor;
+  color: whiteText;
+  font-size: paragraph2;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.userSmallName:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.userBigName:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.userSmallInfo:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.userBigInfo:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

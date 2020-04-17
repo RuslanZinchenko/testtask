@@ -1,0 +1,12 @@
+@value primaryColor from '../../styles/variables.module.css';
+@value centerDirection from '../../styles/variables.module.css';
+@value heading3 from '../../styles/variables.module.css';
+
+.errorText {
+  font-size: heading3;
+  font-weight: bold;
+  color: primaryColor;
+  margin: centerDirection;
+  margin-top: 20px;
+  text-align: center;
+}

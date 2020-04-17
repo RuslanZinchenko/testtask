@@ -1,0 +1,119 @@
+@value primaryColor from '../../styles/variables.module.css';
+@value hoverPrimaryColor from '../../styles/variables.module.css';
+@value headingMobile from '../../styles/variables.module.css';
+@value headingTablet from '../../styles/variables.module.css';
+@value headingDesktop from '../../styles/variables.module.css';
+@value marginForComponents from '../../styles/variables.module.css';
+@value inputColor from '../../styles/variables.module.css';
+@value mainContainer from '../../styles/variables.module.css';
+@value transitionDuration from '../../styles/variables.module.css';
+@value centerDirection from '../../styles/variables.module.css';
+@value whiteText from '../../styles/variables.module.css';
+@value paragraph1 from '../../styles/variables.module.css';
+
+@media (min-width: 22.5rem) {
+  .ourCheerfulUsersWrapper {
+    padding-top: marginForComponents;
+    padding-bottom: marginForComponents;
+    max-width: mainContainer;
+    margin: centerDirection;
+  }
+
+  .ourCheerfulUsersTitle {
+    font-size: headingMobile;
+    margin-left: 1px;
+  }
+
+  .ourCheerfulUsersText {
+    margin-top: 7px;
+  }
+
+  .userIcon {
+    margin-top: 37px;
+  }
+
+  .showMore {
+    display: block;
+    background-color: primaryColor;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin: centerDirection;
+    padding: 8px 61px 8px 62px;
+    color: whiteText;
+    font-size: paragraph1;
+    margin-top: 35px;
+    letter-spacing: 0.3px;
+  }
+
+  .showMore:hover {
+    background-color: hoverPrimaryColor;
+    -webkit-transition-duration: transitionDuration;
+    -o-transition-duration: transitionDuration;
+    transition-duration: transitionDuration;
+  }
+
+  .showMore[disabled] {
+    pointer-events: none;
+    background-color: inputColor;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    cursor: default;
+  }
+
+  .lastUser {
+    display: block;
+    color: primaryColor;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .ourCheerfulUsersTitle {
+    font-size: headingTablet;
+  }
+
+  .ourCheerfulUsersText {
+    margin-top: 14px;
+  }
+
+  .ourCheerfulUsersList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+
+  .userIcon {
+    width: 33.3%;
+    height: auto;
+    margin-bottom: 102px;
+  }
+
+  .userIcon:nth-last-child(-n + 3) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .ourCheerfulUsersTitle {
+    font-size: headingDesktop;
+    margin: 0 1px 0 0;
+  }
+
+  .ourCheerfulUsersText {
+    margin-top: 11px;
+  }
+
+  .userIcon {
+    margin-bottom: 95px;
+  }
+}

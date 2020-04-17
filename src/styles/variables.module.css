@@ -1,0 +1,49 @@
+@value primaryColor: #ef5b4c;
+
+@value hoverPrimaryColor: #c94031;
+
+@value secondaryColor: #007bff;
+
+@value inputColor: #cecece;
+
+@value backgroundColor1: #fff;
+
+@value backgroundColor2: #f9f9f3;
+
+@value backgroundColor3: rgb(238, 237, 230);
+
+@value whiteText: #fff;
+
+@value blackText: #000;
+
+@value focusValidColor: #64aefd;
+
+@value focusValidColorShadow: rgba(173, 222, 255, 0.5);
+
+@value focusInvalidColorShadow: rgba(253, 171, 194, 0.5);
+
+@value marginForComponents: 40px;
+
+@value headingMobile: 30px;
+
+@value headingTablet: 40px;
+
+@value headingDesktop: 50px;
+
+@value heading2: 24px;
+
+@value heading3: 20px;
+
+@value paragraph1: 16px;
+
+@value paragraph2: 14px;
+
+@value paragraph3: 12px;
+
+@value mainContainer: 73.125rem;
+
+@value transitionDuration: 400ms;
+
+@value centerDirection: 0 auto;
+
+@value tooltipTextColor: #555;

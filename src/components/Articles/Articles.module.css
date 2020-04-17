@@ -1,0 +1,5 @@
+@value marginForComponents from '../../styles/variables.module.css';
+
+.articles {
+  margin-top: marginForComponents;
+}
