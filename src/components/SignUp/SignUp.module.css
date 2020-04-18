@@ -261,6 +261,13 @@
     letter-spacing: 0.2px;
   }
 
+  .centerDirection {
+    width: 250px;
+    text-align: center;
+    margin: centerDirection;
+    margin-top: 30px;
+  }
+
   .signUpButton {
     display: block;
     background-color: primaryColor;

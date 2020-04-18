@@ -152,8 +152,7 @@ export default class SignUp extends Component {
               Attention! After successful registration and alert, update the
               list of users in the block from the top
             </p>
-            {error && <ErrorNotification text={error.message} />}
-            {errors && <ErrorValidation text={errors.doubleUser} />}
+
             <form
               onSubmit={this.handleSubmit}
               encType="multipart/form-data"
@@ -269,6 +268,12 @@ export default class SignUp extends Component {
                 </label>
                 {errors && <ErrorValidation text={errors.photo} />}
               </section>
+              {error && <ErrorNotification text={error.message} />}
+              {errors && (
+                <div className={styles.centerDirection}>
+                  <ErrorValidation text={errors.doubleUser} />
+                </div>
+              )}
               <button type="submit" className={styles.signUpButton}>
                 Sign up now
               </button>
