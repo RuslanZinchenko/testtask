@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f49feeb18ddbfe2107697b5e8483405b",
+    "revision": "372f10f5a2c4b19afe12ecf16439bb4a",
     "url": "/testtask/index.html"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/testtask/static/css/help.c386e52c.chunk.css"
   },
   {
-    "revision": "395e7ace82eda565d330",
-    "url": "/testtask/static/css/home-page.2c1720d3.chunk.css"
+    "revision": "2c7fb42268c6e247a484",
+    "url": "/testtask/static/css/home-page.e9919414.chunk.css"
   },
   {
     "revision": "60d47f1d2ed97fa0a59b",
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/testtask/static/css/licenses.6a25867a.chunk.css"
   },
   {
-    "revision": "fc38512aac0f0b2ed3c6",
+    "revision": "cfcc3f8ebb01eb54e039",
     "url": "/testtask/static/css/main.0bc20a37.chunk.css"
   },
   {
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/testtask/static/css/requirements.8f067708.chunk.css"
   },
   {
-    "revision": "ed538fb7c74fb27f95a0",
+    "revision": "6c555b8e877445ce10bf",
     "url": "/testtask/static/css/sign-up.638469de.chunk.css"
   },
   {
@@ -108,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/testtask/static/js/help.18a37733.chunk.js"
   },
   {
-    "revision": "395e7ace82eda565d330",
-    "url": "/testtask/static/js/home-page.432bc7a0.chunk.js"
+    "revision": "2c7fb42268c6e247a484",
+    "url": "/testtask/static/js/home-page.435a9b9a.chunk.js"
   },
   {
     "revision": "60d47f1d2ed97fa0a59b",
@@ -124,8 +124,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/testtask/static/js/licenses.8bf8a1b9.chunk.js"
   },
   {
-    "revision": "fc38512aac0f0b2ed3c6",
-    "url": "/testtask/static/js/main.b4222690.chunk.js"
+    "revision": "cfcc3f8ebb01eb54e039",
+    "url": "/testtask/static/js/main.9e0ea58b.chunk.js"
   },
   {
     "revision": "5d6334135cb26d6a7604",
@@ -148,12 +148,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/testtask/static/js/requirements.8872116a.chunk.js"
   },
   {
-    "revision": "7dc784596fb43508bc85",
-    "url": "/testtask/static/js/runtime~main.2bc29119.js"
+    "revision": "32d7e84674a5670e49e0",
+    "url": "/testtask/static/js/runtime~main.cd3e87b9.js"
   },
   {
-    "revision": "ed538fb7c74fb27f95a0",
-    "url": "/testtask/static/js/sign-up.90516dce.chunk.js"
+    "revision": "6c555b8e877445ce10bf",
+    "url": "/testtask/static/js/sign-up.3e7fc7f7.chunk.js"
   },
   {
     "revision": "1a0193c1e1caec8b5a8a",
