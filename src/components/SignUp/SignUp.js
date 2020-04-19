@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import { validateAll } from 'indicative/validator';
 import * as API from '../../services/article-api';
@@ -52,6 +52,8 @@ export default class SignUp extends Component {
     errors: null,
   };
 
+  inputRef = createRef();
+
   componentDidMount() {
     this.setState({ isLoading: true });
     API.fetchToken()
@@ -72,49 +74,60 @@ export default class SignUp extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    const { current } = this.inputRef;
     this.setState({ isLoading: true });
     const { name, email, phone, position, photo, token } = this.state;
     const { onSubmit } = this.props;
-    validateAll({ name, email, phone, position, photo }, rules, messages)
-      .then(() => {
-        const formData = new FormData();
-        const fileField = document.querySelector('input[type="file"]');
-        formData.append('position_id', 2);
-        formData.append('name', name);
-        formData.append('email', email);
-        formData.append('phone', phone);
-        formData.append('photo', fileField.files[0]);
+    const attachFile = current.files[0];
+    const attachSize = 1 * 1024 * 1024;
+    if (attachFile && attachFile.size > attachSize) {
+      const formattedErrors = {};
+      formattedErrors.photo = 'Your photo should not be more than 1 MB';
+      this.setState({ errors: formattedErrors });
+    } else {
+      validateAll({ name, email, phone, position, photo }, rules, messages)
+        .then(() => {
+          const formData = new FormData();
+          formData.append('position_id', 2);
+          formData.append('name', name);
+          formData.append('email', email);
+          formData.append('phone', phone);
+          formData.append('photo', current.files[0]);
 
-        fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users', {
-          method: 'POST',
-          body: formData,
-          headers: {
-            Token: token,
-          },
+          fetch(
+            'https://frontend-test-assignment-api.abz.agency/api/v1/users',
+            {
+              method: 'POST',
+              body: formData,
+              headers: {
+                Token: token,
+              },
+            },
+          )
+            .then(response => response.json())
+            .then(data => {
+              if (data.success === false) {
+                const formattedErrors = {};
+                formattedErrors.doubleUser = data.message;
+                this.setState({ errors: formattedErrors });
+              } else {
+                onSubmit();
+                this.reset();
+              }
+            })
+            .catch(error => {
+              this.setState({ error });
+            });
         })
-          .then(response => response.json())
-          .then(data => {
-            if (data.success === false) {
-              const formattedErrors = {};
-              formattedErrors.doubleUser = data.message;
-              this.setState({ errors: formattedErrors });
-            } else {
-              onSubmit();
-              this.reset();
-            }
-          })
-          .catch(error => {
-            this.setState({ error });
+        .catch(err => {
+          const formattedErrors = {};
+          err.forEach(error => {
+            formattedErrors[error.field] = error.message;
           });
-      })
-      .catch(err => {
-        const formattedErrors = {};
-        err.forEach(error => {
-          formattedErrors[error.field] = error.message;
-        });
-        this.setState({ errors: formattedErrors });
-      })
-      .finally(() => this.setState({ isLoading: false }));
+          this.setState({ errors: formattedErrors });
+        })
+        .finally(() => this.setState({ isLoading: false }));
+    }
   };
 
   reset = () => {
@@ -140,7 +153,6 @@ export default class SignUp extends Component {
       error,
       errors,
     } = this.state;
-    // console.log(this.state);
 
     return (
       <div>
@@ -246,6 +258,8 @@ export default class SignUp extends Component {
                   className={styles.photoInput}
                   data-multiple-caption="{count} files selected"
                   multiple
+                  accept="image/jpeg,image/png,image/gif"
+                  ref={this.inputRef}
                 />
                 <label
                   htmlFor="file"

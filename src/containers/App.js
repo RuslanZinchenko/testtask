@@ -181,7 +181,6 @@ export default class App extends Component {
       isScrollUp,
       totalPages,
     } = this.state;
-    // console.log(this.state);
 
     return (
       <div>

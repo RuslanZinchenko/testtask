@@ -154,6 +154,7 @@
   }
 
   .footerText {
+    font-size: paragraph1;
     margin-top: 17px;
   }
 }
