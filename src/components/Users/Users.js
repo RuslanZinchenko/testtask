@@ -16,7 +16,7 @@ const Users = ({ users, onLoadMore, location, totalPages }) => (
     <p className={styles.ourCheerfulUsersText}>
       Attention! Sorting users by registration date
     </p>
-    <div id="scroll" />
+    {/* <div id="scroll" /> */}
     <TransitionGroup component="ul" className={styles.ourCheerfulUsersList}>
       {sortData(users).map(user => (
         <CSSTransition
