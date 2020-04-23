@@ -17,11 +17,19 @@ const bigName = (val, num) => {
 };
 
 const pattern = /\d/;
+const emptyPhoto =
+  'https://frontend-test-assignment-api.abz.agency/images/placeholders/placeholder.png';
 
 const UserCard = ({ photo, name, position, email, phone, location }) =>
   location.pathname.match(pattern) > 0 ? (
     <div className={styles.userBigCard}>
-      <img src={photo} alt={cutWord(name, 10)} className={styles.userBigImg} />
+      <img
+        src={photo === emptyPhoto ? '' : photo}
+        alt={photo === emptyPhoto ? '' : cutWord(name, 10)}
+        className={
+          photo === emptyPhoto ? styles.bigPhotoCover : styles.userBigImg
+        }
+      />
       <h3 className={styles.userBigName}>{name}</h3>
       <p className={styles.userBigPosition}>{position}</p>
       <p className={styles.userBigInfo}>{email}</p>
@@ -30,9 +38,11 @@ const UserCard = ({ photo, name, position, email, phone, location }) =>
   ) : (
     <div className={styles.userSmallCard}>
       <img
-        src={photo}
-        alt={cutWord(name, 10)}
-        className={styles.userSmallImg}
+        src={photo === emptyPhoto ? '' : photo}
+        alt={photo === emptyPhoto ? '' : cutWord(name, 10)}
+        className={
+          photo === emptyPhoto ? styles.smallPhotoCover : styles.userSmallImg
+        }
       />
       <h3 className={styles.userSmallName}>
         {cutWord(name, 30)}

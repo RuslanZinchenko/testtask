@@ -27,10 +27,23 @@
   border-radius: 50%;
 }
 
+.smallPhotoCover {
+  composes: userSmallImg;
+  background-image: url(../../../img/photo-cover.svg);
+}
+
 .userBigImg {
   composes: userSmallImg;
   width: 150px;
   height: 150px;
+}
+
+.bigPhotoCover {
+  composes: userBigImg;
+  background-image: url(../../../img/photo-cover.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .userSmallName {
