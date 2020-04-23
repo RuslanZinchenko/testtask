@@ -22,6 +22,14 @@
     margin: centerDirection;
   }
 
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi) {
+    .banner {
+      background-image: url(../../img/banner-photo@2x.jpg);
+    }
+  }
+
   .bannerContent {
     padding: 0 15px;
     max-width: mainContainer;
