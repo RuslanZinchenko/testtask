@@ -2,8 +2,10 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import NavDesktop from './NavDesktop/NavDesktop';
-import NavMobTab from './NavMobTab/NavMobTab';
+// eslint-disable-next-line import/extensions
+import NavDesktop from './NavDesktop/NavDesktop.jsx';
+// eslint-disable-next-line import/extensions
+import NavMobTab from './NavMobTab/NavMobTab.jsx';
 import styles from './Header.module.css';
 import slideTransition from '../../styles/transitions/slide.module.css';
 

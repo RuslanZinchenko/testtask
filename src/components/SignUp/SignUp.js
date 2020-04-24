@@ -2,9 +2,12 @@ import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import { validateAll } from 'indicative/validator';
 import * as API from '../../services/article-api';
-import Loader from '../Loader/Loader';
-import ErrorNotification from '../ErrorNotification/ErrorNotification';
-import ErrorValidation from '../ErrorValidation/ErrorValidation';
+// eslint-disable-next-line import/extensions
+import Loader from '../Loader/Loader.jsx';
+// eslint-disable-next-line import/extensions
+import ErrorNotification from '../ErrorNotification/ErrorNotification.jsx';
+// eslint-disable-next-line import/extensions
+import ErrorValidation from '../ErrorValidation/ErrorValidation.jsx';
 import styles from './SignUp.module.css';
 
 const rules = {

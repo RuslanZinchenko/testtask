@@ -101,6 +101,10 @@
     margin: 0;
     padding: 0;
   }
+
+  .showMore {
+    margin-top: 64px;
+  }
 }
 
 @media (min-width: 64rem) {
@@ -115,5 +119,9 @@
 
   .userIcon {
     margin-bottom: 95px;
+  }
+
+  .showMore {
+    margin-top: 60px;
   }
 }

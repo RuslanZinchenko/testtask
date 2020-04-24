@@ -1,11 +1,15 @@
 import React, { Component, createRef } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Header from '../components/Header/Header';
-import ErrorNotification from '../components/ErrorNotification/ErrorNotification';
+// eslint-disable-next-line import/extensions
+import Header from '../components/Header/Header.jsx';
+// eslint-disable-next-line import/extensions
+import ErrorNotification from '../components/ErrorNotification/ErrorNotification.jsx';
 import * as API from '../services/article-api';
-import Loader from '../components/Loader/Loader';
-import Modal from '../components/Modal/Modal';
+// eslint-disable-next-line import/extensions
+import Loader from '../components/Loader/Loader.jsx';
+// eslint-disable-next-line import/extensions
+import Modal from '../components/Modal/Modal.jsx';
 import * as routes from '../routes';
 import styles from './App.module.css';
 

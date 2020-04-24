@@ -3,7 +3,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
-import UserCard from '../User/UserCard/UserCard';
+// eslint-disable-next-line import/extensions
+import UserCard from '../User/UserCard/UserCard.jsx';
 import styles from './Users.module.css';
 import popTransition from '../../styles/transitions/pop.module.css';
 

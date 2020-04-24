@@ -74,12 +74,20 @@ const UserCard = ({ photo, name, position, email, phone, location }) =>
     </div>
   );
 
+UserCard.defaultProps = {
+  photo: 'photo',
+  name: 'name',
+  position: 'position',
+  email: 'email',
+  phone: 'phone',
+};
+
 UserCard.propTypes = {
-  photo: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  phone: PropTypes.number.isRequired,
+  photo: PropTypes.string,
+  name: PropTypes.string,
+  position: PropTypes.string,
+  email: PropTypes.string,
+  phone: PropTypes.number,
   location: PropTypes.objectOf.isRequired,
 };
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './ErrorValidation.module.css';
 
 const ErrorValidation = ({ text }) => (
-  <div>
+  <div className={styles.errorTextWrapper}>
     <p className={styles.errorText}>{text}</p>
   </div>
 );

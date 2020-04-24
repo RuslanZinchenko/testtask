@@ -40,7 +40,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: backgroundColor1;
-    padding: 10px 15px;
+    padding: 10px 15px 9px 15px;
   }
 
   .logoPicture {

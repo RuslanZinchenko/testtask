@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './AboutMe.module.css';
 
 const AboutMe = () => (
-  <div>
+  <div className={styles.aboutMeWrapper}>
     <h2 className={styles.aboutMe}>About me</h2>
   </div>
 );

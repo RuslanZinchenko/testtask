@@ -1,6 +1,12 @@
 @value primaryColor from '../../styles/variables.module.css';
 @value centerDirection from '../../styles/variables.module.css';
 @value heading3 from '../../styles/variables.module.css';
+@value mainContainer from '../../styles/variables.module.css';
+
+.errorTextWrapper {
+  max-width: mainContainer;
+  margin: centerDirection;
+}
 
 .errorText {
   font-size: heading3;

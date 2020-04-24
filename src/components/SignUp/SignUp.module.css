@@ -17,11 +17,14 @@
 @value whiteText from '../../styles/variables.module.css';
 @value blackText from '../../styles/variables.module.css';
 @value backgroundColor3 from '../../styles/variables.module.css';
+@value mainContainer from '../../styles/variables.module.css';
 
 @media (min-width: 22.5rem) {
   .registerFormWrapper {
     padding-top: marginForComponents;
     padding-bottom: marginForComponents;
+    max-width: mainContainer;
+    margin: centerDirection;
   }
 
   .registerFormTitle {

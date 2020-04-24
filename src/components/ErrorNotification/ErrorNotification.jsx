@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './ErrorNotification.module.css';
 
 const ErrorNotification = ({ text }) => (
-  <div>
+  <div className={styles.errorTextWrapper}>
     <p className={styles.errorText}>{text}</p>
   </div>
 );

@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Loader from '../../Loader/Loader';
-import UserCard from '../UserCard/UserCard';
-import ErrorNotification from '../../ErrorNotification/ErrorNotification';
+// eslint-disable-next-line import/extensions
+import Loader from '../../Loader/Loader.jsx';
+// eslint-disable-next-line import/extensions
+import UserCard from '../UserCard/UserCard.jsx';
+// eslint-disable-next-line import/extensions
+import ErrorNotification from '../../ErrorNotification/ErrorNotification.jsx';
 import styles from './UserById.module.css';
 import * as API from '../../../services/article-api';
 
