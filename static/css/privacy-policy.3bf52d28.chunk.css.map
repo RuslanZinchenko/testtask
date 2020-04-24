@@ -1,1 +1,0 @@
-{"version":3,"sources":["PrivacyPolicy.module.css"],"names":[],"mappings":"AAEA,oCACE,eACF","file":"privacy-policy.3bf52d28.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.privacyPolicy {\n  margin-top: marginForComponents;\n}\n"]}

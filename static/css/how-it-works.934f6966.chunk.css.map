@@ -1,1 +1,0 @@
-{"version":3,"sources":["HowItWorks.module.css"],"names":[],"mappings":"AAEA,8BACE,eACF","file":"how-it-works.934f6966.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.howItWorks {\n  margin-top: marginForComponents;\n}\n"]}

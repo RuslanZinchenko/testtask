@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{460:function(n,e,r){n.exports={marginForComponents:"40px",partnership:"Partnership_partnership__556Qn"}},476:function(n,e,r){"use strict";r.r(e);var t=r(0),a=r.n(t),p=r(460),s=r.n(p);e.default=function(){return a.a.createElement("div",null,a.a.createElement("h2",{className:s.a.partnership},"Partnership"))}}}]);
-//# sourceMappingURL=partnership.c1aa851b.chunk.js.map

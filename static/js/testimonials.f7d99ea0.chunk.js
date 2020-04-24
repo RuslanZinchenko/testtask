@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{464:function(n,e,t){n.exports={marginForComponents:"40px",testimonials:"Testimonials_testimonials__3JVBY"}},480:function(n,e,t){"use strict";t.r(e);var s=t(0),i=t.n(s),a=t(464),o=t.n(a);e.default=function(){return i.a.createElement("div",null,i.a.createElement("h2",{className:o.a.testimonials},"Testimonials"))}}}]);
-//# sourceMappingURL=testimonials.f7d99ea0.chunk.js.map

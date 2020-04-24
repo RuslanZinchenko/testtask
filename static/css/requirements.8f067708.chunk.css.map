@@ -1,1 +1,0 @@
-{"version":3,"sources":["Requirements.module.css"],"names":[],"mappings":"AAEA,kCACE,eACF","file":"requirements.8f067708.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.requirements {\n  margin-top: marginForComponents;\n}\n"]}

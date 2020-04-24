@@ -1,1 +1,0 @@
-{"version":3,"sources":["Partnership.module.css"],"names":[],"mappings":"AAEA,gCACE,eACF","file":"partnership.b212393b.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.partnership {\n  margin-top: marginForComponents;\n}\n"]}

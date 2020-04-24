@@ -1,1 +1,0 @@
-{"version":3,"sources":["OurNews.module.css"],"names":[],"mappings":"AAEA,wBACE,eACF","file":"our-news.17847072.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.ourNews {\n  margin-top: marginForComponents;\n}\n"]}

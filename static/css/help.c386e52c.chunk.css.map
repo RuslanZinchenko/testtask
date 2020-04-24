@@ -1,1 +1,0 @@
-{"version":3,"sources":["Help.module.css"],"names":[],"mappings":"AAEA,kBACE,eACF","file":"help.c386e52c.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.help {\n  margin-top: marginForComponents;\n}\n"]}

@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{458:function(e,n,s){e.exports={marginForComponents:"40px",licenses:"Licenses_licenses__278Nj"}},474:function(e,n,s){"use strict";s.r(n);var c=s(0),i=s.n(c),t=s(458),a=s.n(t);n.default=function(){return i.a.createElement("div",null,i.a.createElement("h2",{className:a.a.licenses},"Licenses"))}}}]);
-//# sourceMappingURL=licenses.8bf8a1b9.chunk.js.map

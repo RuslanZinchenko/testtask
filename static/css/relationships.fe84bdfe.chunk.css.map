@@ -1,1 +1,0 @@
-{"version":3,"sources":["Relationships.module.css"],"names":[],"mappings":"AAEA,oCACE,eACF","file":"relationships.fe84bdfe.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.relationships {\n  margin-top: marginForComponents;\n}\n"]}

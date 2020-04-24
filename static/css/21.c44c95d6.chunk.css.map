@@ -1,1 +1,0 @@
-{"version":3,"sources":["AboutMe.module.css"],"names":[],"mappings":"AAEA,wBACE,eACF","file":"21.c44c95d6.chunk.css","sourcesContent":["@value marginForComponents from '../../styles/variables.module.css';\n\n.aboutMe {\n  margin-top: marginForComponents;\n}\n"]}
