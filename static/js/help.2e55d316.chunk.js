@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{455:function(e,p,n){e.exports={marginForComponents:"40px",mainContainer:"73.125rem",centerDirection:"0 auto",helpWrapper:"Help_helpWrapper__adWzp",help:"Help_help__1yrHM"}},471:function(e,p,n){"use strict";n.r(p);var a=n(0),r=n.n(a),t=n(455),l=n.n(t);p.default=function(){return r.a.createElement("div",{className:l.a.helpWrapper},r.a.createElement("h2",{className:l.a.help},"Help"))}}}]);
-//# sourceMappingURL=help.2e55d316.chunk.js.map

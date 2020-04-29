@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{454:function(t,n,a){t.exports={marginForComponents:"40px",mainContainer:"73.125rem",centerDirection:"0 auto",contactUsWrapper:"ContactUs_contactUsWrapper__3JzoN",contactUs:"ContactUs_contactUs__36fuN"}},470:function(t,n,a){"use strict";a.r(n);var c=a(0),e=a.n(c),o=a(454),r=a.n(o);n.default=function(){return e.a.createElement("div",{className:r.a.contactUsWrapper},e.a.createElement("h2",{className:r.a.contactUs},"Contact us"))}}}]);
-//# sourceMappingURL=contact-us.e3ee6f75.chunk.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{465:function(e,n,t){e.exports={marginForComponents:"40px",mainContainer:"73.125rem",centerDirection:"0 auto",testimonialsWrapper:"Testimonials_testimonialsWrapper__139jP",testimonials:"Testimonials_testimonials__3JVBY"}},481:function(e,n,t){"use strict";t.r(n);var a=t(0),i=t.n(a),s=t(465),o=t.n(s);n.default=function(){return i.a.createElement("div",{className:o.a.testimonialsWrapper},i.a.createElement("h2",{className:o.a.testimonials},"Testimonials"))}}}]);
+//# sourceMappingURL=testimonials.1442d480.chunk.js.map
