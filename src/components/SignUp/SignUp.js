@@ -75,18 +75,48 @@ export default class SignUp extends Component {
     });
   };
 
-  handleSubmit = e => {
-    e.preventDefault();
+  formValidation = () => {
+    const { email, phone } = this.state;
     const { current } = this.inputRef;
-    this.setState({ isLoading: true });
-    const { name, email, phone, position, photo, token } = this.state;
-    const { onSubmit } = this.props;
     const attachFile = current.files[0];
     const attachSize = 1 * 1024 * 1024;
+    const formattedErrors = {};
+    // eslint-disable-next-line no-useless-escape
+    const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const phonePattern = /\+380\d{9}$/;
+    if (email && !email.match(emailPattern)) {
+      formattedErrors.email = 'You entered the wrong email';
+    }
+    if (phone && !phone.match(phonePattern)) {
+      formattedErrors.phone =
+        'Your phone number must begin with (+380) and then contain 9 digits';
+    }
     if (attachFile && attachFile.size > attachSize) {
-      const formattedErrors = {};
       formattedErrors.photo = 'Your photo should not be more than 1 MB';
-      this.setState({ errors: formattedErrors });
+    }
+    if (
+      formattedErrors.email ||
+      formattedErrors.phone ||
+      formattedErrors.photo
+    ) {
+      this.setState(state => ({
+        errors: { ...state.errors, ...formattedErrors },
+      }));
+      return true;
+    }
+    return false;
+  };
+
+  handleSubmit = e => {
+    this.setState({ isLoading: true });
+    e.preventDefault();
+    const { current } = this.inputRef;
+    const { name, email, phone, position, photo, token } = this.state;
+    const { onSubmit } = this.props;
+    const isValid = this.formValidation();
+    if (isValid) {
+      // eslint-disable-next-line no-console
+      console.log('validation failed');
     } else {
       validateAll({ name, email, phone, position, photo }, rules, messages)
         .then(() => {
@@ -261,7 +291,7 @@ export default class SignUp extends Component {
                   className={styles.photoInput}
                   data-multiple-caption="{count} files selected"
                   multiple
-                  accept="image/jpeg,image/png,image/gif"
+                  accept="image/jpeg"
                   ref={this.inputRef}
                 />
                 <label

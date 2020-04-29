@@ -265,8 +265,8 @@
   }
 
   .centerDirection {
+    display: flex;
     width: 250px;
-    text-align: center;
     margin: centerDirection;
     margin-top: 30px;
   }
