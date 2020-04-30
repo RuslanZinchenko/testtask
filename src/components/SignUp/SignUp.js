@@ -99,9 +99,9 @@ export default class SignUp extends Component {
       formattedErrors.phone ||
       formattedErrors.photo
     ) {
-      this.setState(state => ({
-        errors: { ...state.errors, ...formattedErrors },
-      }));
+      this.setState({
+        errors: formattedErrors,
+      });
       return true;
     }
     return false;
