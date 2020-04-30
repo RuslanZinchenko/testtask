@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{459:function(e,n,s){e.exports={marginForComponents:"40px",mainContainer:"73.125rem",centerDirection:"0 auto",licensesWrapper:"Licenses_licensesWrapper__2d2ne",licenses:"Licenses_licenses__278Nj"}},475:function(e,n,s){"use strict";s.r(n);var a=s(0),c=s.n(a),i=s(459),r=s.n(i);n.default=function(){return c.a.createElement("div",{className:r.a.licensesWrapper},c.a.createElement("h2",{className:r.a.licenses},"Licenses"))}}}]);
-//# sourceMappingURL=licenses.67f89d03.chunk.js.map

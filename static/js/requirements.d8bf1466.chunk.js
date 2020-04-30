@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{467:function(e,r,n){e.exports={marginForComponents:"40px",mainContainer:"73.125rem",centerDirection:"0 auto",requirementsWrapper:"Requirements_requirementsWrapper__3La_W",requirements:"Requirements_requirements__Gyhpi"}},483:function(e,r,n){"use strict";n.r(r);var t=n(0),a=n.n(t),i=n(467),s=n.n(i);r.default=function(){return a.a.createElement("div",{className:s.a.requirementsWrapper},a.a.createElement("h2",{className:s.a.requirements},"Requirements"))}}}]);
-//# sourceMappingURL=requirements.d8bf1466.chunk.js.map
