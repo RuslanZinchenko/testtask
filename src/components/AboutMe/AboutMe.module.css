@@ -1,0 +1,12 @@
+@value marginForComponents from '../../styles/variables.module.css';
+@value mainContainer from '../../styles/variables.module.css';
+@value centerDirection from '../../styles/variables.module.css';
+
+.aboutMeWrapper {
+  max-width: mainContainer;
+  margin: centerDirection;
+}
+
+.aboutMe {
+  margin-top: marginForComponents;
+}
